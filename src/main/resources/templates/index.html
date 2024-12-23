@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" th:replace="~{base::layout(~{::title},~{::body})}">
+<head>
+    <title>Login Jobs4us</title>
+</head>
+<body>
+<section class="background">
+<nav class="main_div">
+    <div class="logo_left">
+        <label class="logo">
+            jobs4us
+        </label>
+        <label class="logo_com">
+            .com
+        </label>
+    </div>
+    <div class="logo_right">
+        <label class="Candidate_login_btn">
+            <a th:href="@{/login}">
+                Job Candidate Login
+            </a>
+            <a th:href="@{/register?role=Job Seeker}">
+                /Register
+            </a>
+        </label>
+        <label class="Recruiter_login_btn">
+            <a th:href="@{/login}">
+                Recruiter Login
+            </a>
+            <a th:href="@{/register?role=Recruiter}">
+                /Register
+            </a>
+
+        </label>
+    </div>
+</nav>
+<!--<form th:action="@{/global-search/}">-->
+<!--    <div class="searchBox">-->
+<!--        <div class="inner">-->
+
+<!--            <input type="text" placeholder="Search for a job" name="job" th:value="${job}"/>-->
+<!--            <input type="text" placeholder="Enter a location" name="location" th:value="${location}"/>-->
+<!--            <button type="submit"><i class="fa fa-search"></i></button>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</form>-->
+    <div style="position:absolute; top:calc(50% - 30px); left:30%; color:#ffffff; text-align:center">
+        <h1>Unlock Endless Opportunities</h1>
+        <h3>--Sign Up Today!</h3>
+    </div>
+<footer>
+    <label class="copy-right">Copyright © jobs4us.com</label>
+</footer>
+</section>
+</body>
+</html>
